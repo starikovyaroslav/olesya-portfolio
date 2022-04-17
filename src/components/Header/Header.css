@@ -3,6 +3,9 @@
   justify-content: center;
   min-height: 74px;
   background-color: transparent;
+  width: 100%;
+  position: absolute;
+  z-index: 22;
 }
 
 .header-main {
@@ -13,7 +16,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   padding: 0 70px;
