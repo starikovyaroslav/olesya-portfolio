@@ -23,7 +23,7 @@ export default function Navigation () {
         </nav>
         <button className={isDataOpen ? 'navigation__burger closed' : 'navigation__burger'} onClick={openData}/>
 
-        <div className={isDataOpen ? 'overflow' : ''}>
+        <div className="navigation__menu">
           <div className={`navigation__menu-small ${isDataOpen ? 'opened' : ''}`}>
             <button className='navigation__close-icon' onClick={closeData}/>
             <nav className='navigation__main-small'>
