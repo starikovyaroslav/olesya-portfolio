@@ -83,7 +83,7 @@
   flex-direction: column;
   right: 0;
   top: 0;
-  background-color: transparent;
+  background-color: #00000014;
   box-shadow: 3px -1px 20px 0px #00000075;
   backdrop-filter: blur(10px);
   height: 100vh;

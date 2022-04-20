@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <header className={ location.pathname !== '/' ? 'header header-main' : 'header'}>
       <div className="header__inner">
-        <Link to="/" className="header__logo"></Link>
+        {/* <Link to="/" className="header__logo"></Link> */}
         <Navigation/>
       </div>
     </header>

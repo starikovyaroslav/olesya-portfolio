@@ -6,7 +6,8 @@ export default function Preview() {
     <section className="preview">
       <div className="preview__name">
         <div className="preview__container">
-          <h1 className="preview__about">Обо мне</h1>
+          <h1 className="preview__about">Олеся Шакина</h1>
+          <p className="preview__subtitle">Фотограф</p>
         </div>
       </div>
     </section>

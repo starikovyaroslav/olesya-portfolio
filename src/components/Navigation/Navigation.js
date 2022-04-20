@@ -18,7 +18,7 @@ export default function Navigation () {
         <>
         <nav className='navigation__main'>
           <Link to='/' className='navigation__link' target='_self'>Главная</Link>
-          <Link to='/portfolio' className='navigation__link navigation__link-movie' target='_self'>Портфолио</Link>
+          <Link to='/portfolio' className='navigation__link' target='_self'>Портфолио</Link>
           <Link to='/price' className='navigation__link' target='_self'>Цены</Link>
         </nav>
         <button className={isDataOpen ? 'navigation__burger closed' : 'navigation__burger'} onClick={openData}/>
