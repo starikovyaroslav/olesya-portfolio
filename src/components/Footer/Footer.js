@@ -82,6 +82,17 @@ export default function Footer() {
           <p className="footer__subtitle">+7 951 361 42 05</p>
         </div>
       </div>
+      <div className="footer__info_s">
+            <p className="footer__copyright">&copy; 2022 Стариков Ярослав</p>
+            <a
+              href="https://github.com/starikovyaroslav"
+              className="footer__link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={github} alt="github" className="footer__link-github" />
+            </a>
+          </div>
     </footer>
   );
 }

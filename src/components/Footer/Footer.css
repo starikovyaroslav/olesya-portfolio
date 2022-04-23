@@ -93,8 +93,44 @@
   gap: 5px;
 }
 
+.footer__info_s {
+  display: none;
+}
+
 .footer__copyright {
   color: #4f4f4f;
   max-width: 1280px;
   margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .footer {
+    padding: 80px 30px 20px;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    gap: 55px;
+  }
+
+  .footer__info_s {
+    display: flex;
+    margin: 50px 0 0;
+    gap: 5px;
+  }
+
+  .footer__info {
+    display: none;
+  }
+
+  .footer__link-media {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__links {
+    gap: 60px;
+  }
 }
