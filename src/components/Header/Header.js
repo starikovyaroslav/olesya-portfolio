@@ -8,9 +8,8 @@ export const Header = () => {
   const location = useLocation();
 
   return (
-    <header className={ location.pathname !== '/' ? 'header header-main' : 'header'}>
+    <header className={ location.pathname !== '/' ? 'header' : 'header'}>
       <div className="header__inner">
-        {/* <Link to="/" className="header__logo"></Link> */}
         <Navigation/>
       </div>
     </header>

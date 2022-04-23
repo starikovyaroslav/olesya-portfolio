@@ -1,16 +1,17 @@
 import React from 'react';
-import './Main.css';
+import './Portfolio.css';
 import { Header } from '../Header/Header';
 import Preview from '../Preview/Preview';
-import About from '../About/About';
 import Footer from '../Footer/Footer';
 
-export const Main = () => {
+export const Portfolio = () => {
   return (
-    <section className='main'>
+    <section className='portfolio'>
       <Header />
-      <Preview title={"Олеся Шакина"} />
-      <About />
+      <Preview
+        title={"Портфолио"}
+        class={"preview__portfolio"}
+      />
       <Footer />
     </section>
   )
