@@ -12,3 +12,28 @@
   display: flex;
   gap: 40px;
 }
+
+.select {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .select {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 90px auto 0;
+    border: 2px solid black;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .select {
+    max-width: 280px;
+    margin: 70px auto 0;
+  }
+}
