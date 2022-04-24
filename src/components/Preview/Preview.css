@@ -18,10 +18,21 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: url(../../images/MM.jpg);
+  background-image: url(../../images/portfolio.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.preview__portfolio::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #2A2C2F;
+  opacity: .3;
+}
+
 
 .preview__container {
   margin: 0 auto;
