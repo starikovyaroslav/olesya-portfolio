@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navigation.css';
 
 export default function Navigation () {
+
+    const location = useLocation();
 
     const [isDataOpen, setIsDataOpen] = useState(false);
 
@@ -27,9 +29,9 @@ export default function Navigation () {
           <div className={`navigation__menu-small ${isDataOpen ? 'opened' : ''}`}>
             <button className='navigation__close-icon' onClick={closeData}/>
             <nav className='navigation__main-small'>
-                <Link to='/' className='navigation__link-small' target='_self'>Главная</Link>
-                <Link to='/portfolio' className='navigation__link-small' target='_self'>Портфолио</Link>
-                <Link to='/price' className='navigation__link-small' target='_self'>Цены</Link>
+                <Link to='/' className={location.pathname === '/' ? 'navigation__link-small border' : "navigation__link-small"} target='_self'>Главная</Link>
+                <Link to='/portfolio' className={location.pathname === '/portfolio' ? 'navigation__link-small border' : "navigation__link-small"} target='_self'>Портфолио</Link>
+                <Link to='/price' className={location.pathname === '/price' ? 'navigation__link-small border' : "navigation__link-small"} target='_self'>Цены</Link>
             </nav>
           </div>
         </div>

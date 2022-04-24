@@ -144,7 +144,7 @@
   transition: .3s linear;
 }
 
-.navigation__link-small:nth-of-type(2) {
+.border {
   border-bottom: 2px solid #fff;
 }
 
