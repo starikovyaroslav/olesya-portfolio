@@ -13,6 +13,15 @@
   gap: 40px;
 }
 
+.nav__item {
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.nav__item:hover {
+  opacity: .6;
+}
+
 .select {
   display: none;
 }

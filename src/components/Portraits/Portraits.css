@@ -1,0 +1,52 @@
+.portraits {
+  max-width: 1280px;
+  display: flex;
+  margin: 70px auto;
+  width: 100%;
+  padding: 0 70px;
+  box-sizing: border-box;
+}
+
+.portraits__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.portraits__image {
+  width: 100%;
+}
+
+.portraits__three {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: stretch;
+  grid-column: span 3;
+  gap: 15px;
+}
+
+.span {
+  grid-row: span 2;
+}
+
+.portraits__four {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: span 3;
+  gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .portraits {
+    padding: 0 30px;
+  }
+
+  .portraits__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portraits__four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
