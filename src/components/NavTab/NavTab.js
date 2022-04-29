@@ -3,6 +3,14 @@ import './NavTab.css';
 
 export default function NavTab({onStatus}) {
 
+
+  const [isStatus, setIsStatus] = React.useState("all");
+
+  const statusHandler = (evt) => {
+    setIsStatus(evt.target.value);
+    onStatus(evt.target.value);
+  }
+
   return (
     <>
       <nav className="nav">
@@ -13,7 +21,7 @@ export default function NavTab({onStatus}) {
           <li className="nav__item" onClick={() => onStatus("love")}>Love story</li>
         </ul>
       </nav>
-      <select className='select' id="selectBox" onChange={() => onStatus(this.value)}>
+      <select className='select' id="selectBox" value={isStatus} onChange={statusHandler}>
           <option className="select__item" value="all">Все</option>
           <option className="select__item" value="portraits">Портреты</option>
           <option className="select__item" value="studio">Студийные</option>
