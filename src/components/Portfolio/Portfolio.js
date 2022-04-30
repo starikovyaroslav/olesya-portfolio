@@ -8,6 +8,7 @@ import Footer from '../Footer/Footer';
 import NavTab from '../NavTab/NavTab';
 import All from '../All/All';
 import Portraits from '../Portraits/Portraits';
+import Studio from '../Studio/Studio';
 
 export const Portfolio = () => {
   const location = useLocation();
@@ -30,6 +31,7 @@ export const Portfolio = () => {
       />
       {isStatus === "all" ? <All /> : ''}
       {isStatus === "portraits" ? <Portraits /> : ''}
+      {isStatus === "studio" ? <Studio /> : ''}
       <Footer />
     </section>
   )
