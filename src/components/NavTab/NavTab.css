@@ -1,0 +1,48 @@
+.nav {
+  max-width: 1280px;
+  display: flex;
+  margin: 90px auto 0;
+  width: 100%;
+}
+
+.nav__items {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav__item {
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.nav__item:hover {
+  opacity: .6;
+}
+
+.select {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .select {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 90px auto 0;
+    border: 2px solid black;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .select {
+    max-width: 280px;
+    margin: 70px auto 0;
+  }
+}

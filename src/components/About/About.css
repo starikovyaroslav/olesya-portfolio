@@ -1,0 +1,36 @@
+.about {
+  max-width: 1280px;
+  display: flex;
+  margin: 80px auto;
+  width: 100%;
+}
+
+.about__container {
+  padding: 0 70px;
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about__photo {
+  max-width: 40%;
+  width: 100%;
+}
+
+.about__back {
+  width: 100%;
+}
+
+.about__about {
+  margin: 0;
+}
+
+.about__text {
+  margin: 0;
+}
