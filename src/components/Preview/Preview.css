@@ -33,6 +33,26 @@
   opacity: .3;
 }
 
+.preview__prices {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/price.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.preview__prices::before {
+  content: '';
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #2A2C2F;
+  opacity: .3;
+}
+
 
 .preview__container {
   margin: 0 auto;
